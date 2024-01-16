@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media-query.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand d-flex justify-content-center align-items-center" href="#">
+        <img src="./img/logo.png" alt="logo" class="w-100">
+        <div class="logo">
+          <h1>Weather</h1>
+          <p>tagline goes here</p>
+        </div>
+      </a>
+      <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon bg-white">
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Live Cameras</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Photos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      
+      </div>
+    </div>
+  </nav>
+  <div class="main-all">
+  <div class="main">
+    <div class="container overflow-hidden">
+      <form action="" class="find-form">
+      <input type="text" placeholder="Find your location... " id="search" class="form-control rounded-5 text-white border-0">
+      <input type="button" value="Find" id="submit" class="btn btn-primary rounded-5 px-5">
+     </form>
+    </div> 
+    <div class="row gx-3 gy-3 py-5 px-5 rem-p">
+      <div class="col-md-4 card rounded text-white">
+    <div class="forecast">
+        <div class="forecast-today">
+          <div class="header1 d-flex align-items-center justify-content-between color">
+            <div class="day ms-2">Friday</div>
+            <div class="date me-2">12 January</div>
+          </div>
+          <div class="forecast-body mx-4">
+            <div class="zone my-4 color">cairo</div>
+            <div class="degree my-3">
+              <div class="d-flex justify-content-start align-items-center">
+              <div class="num">15</div>
+              <sup>o</sup>
+              c
+            </div>
+              <div class="icon ms-3 "><img src="" alt=""></div>
+            </div>
+            
+            <div class="status color">Partily Cloudy</div>
+          </div>
+          <div class="forecast-foot py-3 color">
+            <span class="ms-3"><img src="./img/icon-umberella.png" alt=""> 20%</span>
+            <span class="m-4"><img src="./img/icon-wind.png" alt="" > 18km/h</span>
+            <span><img src="./img/icon-compass.png" alt=""> East</span>
+          </div>
+        </div>
+    
+    </div>
+  </div>
+  <div class="col-md-4 card2 rounded text-white">
+    <div class="forecast">
+        <div class="forecast-nextday">
+          <div class="header2 d-flex align-items-center justify-content-between">
+            <div class="day m-auto color">Monday</div>
+          </div>
+          <div class="forecast-body nextday text-center">
+            <div class="icon mt-4 mb-2 ico-nextday"><img  alt=""></div>
+            <div class="degree m-auto mb-2">
+              <div class="num">16.5</div>
+              <sup >o</sup>
+              c
+            </div>
+            
+            <small>
+              11.6
+              <sup>o</sup>
+            </small>
+            <div class="status my-4 text-primary">Sunny</div>
+          </div>
+      
+        </div>
+    
+    </div>
+  </div>
+  <div class="col-md-4 card rounded text-white">
+    <div class="forecast">
+        <div class="forecast-nextday " id="forecast-nextday">
+          <div class="header1 d-flex align-items-center justify-content-between">
+            <div class="day m-auto color">Tuesday</div>
+          </div>
+          <div class="forecast-body nextday text-center">
+            <div class="icon mt-4 mb-2 ico-third"><img  alt=""></div>
+            <div class="degree m-auto mb-2">
+              <div class="num">19.5</div>
+              <sup >o</sup>
+              c
+            </div>
+            
+            <small>
+              11.3
+              <sup>o</sup>
+            </small>
+            <div class="status my-4 text-primary">Sunny</div>
+          </div>
+      
+        </div>
+    
+    </div>
+  </div>
+  </div>
+  <footer class="site-footer py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <form action="#" class="sub-form">
+            <input type="text" placeholder="Enter your email to subscribe..." class="form-control rounded-5 search p-3 border-0">
+            <input type="submit" value="Subscribe" class="btn btn-primary rounded-4 boutton">
+          </form>
+        </div>
+        <div class="col-md-3">
+          <div class="social-links d-flex justify-content-end align-items-center">
+            <a href="#"> <i class="fa-brands fa-facebook  "></i></a>
+            <a href="#"><i class="fa-brands fa-twitter  "></i></a>
+            <a href="#"><i class="fa-brands fa-google-plus  "></i></a>
+            <a href="#"><i class="fa-brands fa-pinterest  "></i></a>
+          </div>
+        </div>
+      </div>
+
+      <p class="copy text-white py-5">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+    </div>
+  </footer>
+  </div>
+</div>
+<script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
